@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/catBreedsFragment">
+
+    <fragment
+        android:id="@+id/catBreedsFragment"
+        android:name="com.example.catfacts.ui.fragment.CatBreedsFragment"
+        android:label="CatBreedsFragment" >
+        <action
+            android:id="@+id/action_catBreedsFragment_to_catDetailFragment"
+            app:destination="@id/catDetailFragment"
+            app:popUpTo="@+id/catBreedsFragment"
+            app:popUpToSaveState="true"/>
+    </fragment>
+    <fragment
+        android:id="@+id/catDetailFragment"
+        android:name="com.example.catfacts.ui.fragment.CatDetailFragment"
+        android:label="CatDetailFragment">
+        <argument android:name="catDetail"
+            app:argType="com.example.catfacts.model.CatDetailModel"
+            app:nullable="true"
+            android:defaultValue="@null" />
+    </fragment>
+    <fragment
+        android:id="@+id/metricsFragment"
+        android:name="com.example.catfacts.ui.fragment.MetricsFragment"
+        android:label="MetricsFragment" >
+    </fragment>
+    <fragment
+        android:id="@+id/catFactsFragment"
+        android:name="com.example.catfacts.ui.fragment.CatFactsFragment"
+        android:label="CatFactsFragment" />
+</navigation>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/catBreedsFragment"
+        android:title="Cat Breeds"/>
+
+    <item
+        android:id="@+id/catDetailFragment"
+        android:title="Cat Detail"/>
+
+    <item
+        android:id="@+id/metricsFragment"
+        android:title="Metrics"/>
+    <item
+        android:id="@+id/catFactsFragment"
+        android:title="Cat Facts"/>
+</menu>
